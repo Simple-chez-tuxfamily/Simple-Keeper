@@ -1,0 +1,294 @@
+body{
+    margin: 0;
+    padding: 50px;
+    background: #eaeaea;
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
+    font-size: 14px;
+}
+
+nav{
+    height: 50px;
+    line-height: 48px;
+    background: #fafafa;
+    box-shadow: 0 0 5px #ccc;
+    padding: 0;
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    color: #555;
+}
+
+nav ul li a{
+    color: #555;
+    text-decoration: none;
+}
+
+.droite{
+    float: right;
+    padding-left: 20px;
+}
+
+#container{
+    margin: 0 10%;
+}
+
+#nouvelle_note, #editeur{
+    background: #fff;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-bottom: 3px solid #ddd;
+    width: 500px;
+    margin: 15px auto;
+}
+#nouvelle_note input[type="text"], #editeur input[type="text"]{
+    border: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    display: none;
+    margin-bottom: 10px;
+}
+#nouvelle_note textarea, #editeur textarea{
+    border: 0;
+    width: 100%;
+    height: 17px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
+    resize: none;
+}
+#nouvelle_note input[type="submit"], #editeur input[type="submit"]{
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #f2f2f2;
+    float: right;
+    display: none;
+}
+
+#editeur input[type="text"], #editeur input[type="submit"]{
+    display: block;
+}
+
+#editeur textarea{
+    min-height: 75px;
+    resize: vertical;
+}
+
+#editeur input[type="text"]:focus, #editeur textarea:focus{
+    border: 1px dotted #ccc;
+}
+    
+#editeur{
+    margin: 100px auto;
+    z-index: 100;
+}
+
+#masque{
+    background: rgba(25, 25, 25, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 70;
+    display: none;
+}
+
+.clear{
+    clear: both;
+}
+
+.note{
+    background: #fff;
+    word-wrap: break-word;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-bottom: 3px solid #ddd;
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-align: left;
+    margin: 10px 8px;
+}
+
+.note h1{
+    font-size: 15px;
+    margin: 0;
+    color: #333;
+}
+
+.note p{
+    font-size: 13px;
+    line-height: 18px;
+    color: #555;
+    margin: 10px 0 0 0;
+}
+
+.note .supprimer{
+    width: 15px;
+    color: #aaa;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    display: none;
+    cursor: pointer;
+    background: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.note a{
+    color: #206382;
+    text-decoration: none;
+}
+
+.note a:hover{
+    color: #3a8cb2;
+}
+
+.note:hover > .supprimer{
+    display: block;
+}
+
+.droite a:hover{
+    color: #3a8cb2;
+}
+
+#bg_connexion{
+    background: #3a8cb2;
+}
+
+#notification{
+    position: fixed;
+    width: 100%;
+    height: 35px;
+    line-height: 34px;
+    z-index: 30;
+    font-size: 13px;
+    padding: 0 15px;
+    font-weight: bold;
+    color: #111;
+    left: 0;
+    top: 0;
+    box-shadow: 0 0 5px #444;
+}
+#formulaire input{
+    background: #fefefe;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: -1px -1px 0 0;
+    width: 300px;
+    display: inline-block;
+}
+#formulaire input[type="submit"]{
+    background: #3a8cb2;
+    border: 1px solid #3a8cb2;
+    color: #fff;
+    cursor: pointer;
+    width: 322px;
+    padding: 9px;
+}
+#formulaire input:focus{
+    border: 1px solid #3a8cb2;
+}
+
+/*
+ * Pour éviter que ce design s'applique sur les mobiles
+*/
+@media (min-width: 701px){
+    #connexion{
+        width: 575px;
+        margin: 200px auto 0 auto;    
+    }
+        
+    #connexion #titre{
+        width: 225px;
+        float: left;
+        color: #fff;
+        font-size: 18px;
+        line-height: 30px;    
+    }
+    #connexion #titre img{
+        margin: -20px 0 -10px -20px;
+    }
+    #connexion #formulaire{
+        width: 310px;
+        float: right;
+        background: #f5f5f5;
+        padding: 20px 20px 5px 20px;
+        border-radius: 5px;
+    }
+    #connexion input{
+        margin: 0;
+           
+        border-radius: 5px;
+        padding: 10px;
+        width: 288px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    #connexion input[type="text"], #connexion input[type="password"]{
+        border: 2px solid #eee;
+    }
+    #connexion input[type="submit"]{
+        background: #3a8cb2;
+        color: #fff;
+        font-weight: bold;
+        width: 310px;
+    }
+    #connexion input[type="submit"]:hover{
+        background: #347d9f;
+        cursor: pointer;
+    }
+    #connexion input[type="text"]:focus, #connexion input[type="password"]:focus, #connexion input[type="email"]:focus{
+        border: 2px solid #3a8cb2;
+    }
+    #connexion label{
+        color: #999;
+        font-size: 15px;
+        display: block;
+        margin: 10px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 700px){
+    .note .supprimer{
+        display: block;
+    }
+    
+    #container{
+        margin: 0;
+    }
+    
+    #nouvelle_note, #editeur{
+        width: auto; 
+    }
+    
+    #editeur{
+        margin: 30px 15px;
+    }
+    
+    .note{
+        width: auto;
+        padding-right: 40px; /* Pour empêcher le « X » de masquer une partie du titre » */
+    }
+}
+
+textarea:invalid{
+    box-shadow: 0 0 0;
+}
