@@ -7,11 +7,11 @@
         session_start();
         if(!isset($_SESSION['token'])) $_SESSION['token'] = '';
         
-        $javascript = null;
+        $javascript = file_get_contents('javascript/jquery.js');
         
         $repertoire = opendir('javascript');
         while($contenu = readdir($repertoire)){
-            if(!is_dir($contenu))
+            if(!is_dir($contenu) && $contenu != 'jquery.js')
                 $javascript .= file_get_contents('javascript/' . $contenu);
         }
         closedir($repertoire);
