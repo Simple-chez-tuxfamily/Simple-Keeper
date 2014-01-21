@@ -1,7 +1,7 @@
 # [Simple Keeper](http://simple.tuxfamily.org/)
 ## Présentation
 
-[Simple Keeper](http://simple.tuxfamily.org/) est une alternative libre à Google Keep publié sous licence libre GPL v3. Écrit en PHP et utilisant SQLite 3 comme base de données, il est conçu pour être très simple d'utilisateur et de permettre à un utilisateur lambda d'auto-héberger son propre gestionnaire de notes.
+[Simple Keeper](http://simple.tuxfamily.org/) est une alternative libre à Google Keep publié sous licence libre GPL v3. Écrit en PHP et utilisant SQLite 3 comme base de données, il est conçu pour être très simple d'utilisation et de permettre à un utilisateur lambda d'auto-héberger son propre gestionnaire de notes.
 
 ## Installation
 
