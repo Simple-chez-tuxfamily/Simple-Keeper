@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 40px;
     background: #eaeaea;
-    background-image : url("/url/css/sunset.png");
+    # background-image : url("/url/css/sunset.png"); # background personnel
     background-attachment:fixed;
     font-family: 'Open Sans', sans-serif, Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
     font-size: 14px;
