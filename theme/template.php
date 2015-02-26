@@ -3,7 +3,6 @@
 	<head>
 		<title><?php echo $title; ?> - Simple Keeper</title>
 		<meta charset="utf-8" />
-		<link type="text/css" rel="stylesheet" href="style.css" />
 		<link rel="shortcut icon" type="image/png" href="theme/images/favicon.png" />      
 		<style type="text/css">
 		    @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
@@ -35,7 +34,17 @@
 				<li class="droite"><a href="?p=deconnexion">Déconnexion</a></li>
 			</ul>
 		</nav>
+		
 		<?php echo $content; ?>
 		<script type="text/javascript" src="core/js.php"></script>
+		<script>
+			// script pour arranger les divisions des notes automatiquement
+			var container = document.querySelector('#container_notes');
+			var msnry = new Masonry( container, {
+			  // options
+			  columnWidth: 0,
+			  itemSelector: '.rouge'
+			});
+		</script>
 	</body>
 </html>
