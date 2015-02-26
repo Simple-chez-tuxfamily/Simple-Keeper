@@ -3,7 +3,6 @@
 	<head>
 		<title><?php echo $title; ?> - Simple Keeper</title>
 		<meta charset="utf-8" />
-		<link type="text/css" rel="stylesheet" href="style.css" />
 		<link rel="shortcut icon" type="image/png" href="theme/images/favicon.png" />      
 		<style type="text/css">
 		    @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
