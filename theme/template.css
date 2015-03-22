@@ -1,14 +1,16 @@
 body{
     margin: 0;
-    padding: 50px;
+    padding: 40px;
     background: #eaeaea;
+    # background-image : url("/url/css/sunset.png"); # background personnel
+    background-attachment:fixed;
     font-family: 'Open Sans', sans-serif, Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
     font-size: 14px;
 }
 
 nav{
-    height: 50px;
-    line-height: 48px;
+    height: 40px;
+    line-height: 38px;
     background: #fafafa;
     box-shadow: 0 0 5px #ccc;
     padding: 0;
@@ -40,9 +42,8 @@ nav ul li a{
 }
 
 #container{
-    margin: 0 10%;
+    margin: 0 9%;
 }
-
 #nouvelle_note, #editeur{
     background: #fff;
     padding: 15px 20px;
@@ -83,7 +84,7 @@ nav ul li a{
 }
 
 #editeur textarea{
-    min-height: 75px;
+    min-height: 500px;
     resize: vertical;
 }
 
@@ -92,8 +93,10 @@ nav ul li a{
 }
     
 #editeur{
-    margin: 100px auto;
+    margin: 70px auto;
     z-index: 100;
+	width: 800px;
+	
 }
 
 #masque{
@@ -123,6 +126,8 @@ nav ul li a{
     vertical-align: top;
     text-align: left;
     margin: 10px 8px;
+	max-height: 300px;
+	overflow:hidden;
 }
 
 .note h1{
@@ -276,7 +281,7 @@ nav ul li a{
     }
     
     #nouvelle_note, #editeur{
-        width: auto; 
+        width: auto;
     }
     
     #editeur{

@@ -34,7 +34,17 @@
 				<li class="droite"><a href="?p=deconnexion">Déconnexion</a></li>
 			</ul>
 		</nav>
+		
 		<?php echo $content; ?>
 		<script type="text/javascript" src="core/js.php"></script>
+		<script>
+			// script pour arranger les divisions des notes automatiquement
+			var container = document.querySelector('#container_notes');
+			var msnry = new Masonry( container, {
+			  // options
+			  columnWidth: 0,
+			  itemSelector: '.rouge'
+			});
+		</script>
 	</body>
 </html>
