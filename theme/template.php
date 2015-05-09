@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<link rel="shortcut icon" type="image/png" href="theme/images/favicon.png" />      
 		<style type="text/css">
-		    @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+		    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 		</style>
 		<link type="text/css" rel="stylesheet" href="core/css.php" />
 		<!-- Balises pour les mobiles -->
@@ -34,7 +34,16 @@
 				<li class="droite"><a href="?p=deconnexion">Déconnexion</a></li>
 			</ul>
 		</nav>
+		
 		<?php echo $content; ?>
 		<script type="text/javascript" src="core/js.php"></script>
+		<script>
+var container = document.querySelector('#container_notes');
+var msnry = new Masonry( container, {
+  // options
+  columnWidth: 0,
+  itemSelector: '.rouge'
+});
+</script>
 	</body>
 </html>
