@@ -9,9 +9,7 @@
 
     session_start();
 
-
-
-$token;
+    $token;
     if (!isset($_GET['token'])) {
         $token = '';
     } else {
