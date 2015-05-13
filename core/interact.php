@@ -12,7 +12,7 @@
     if(!isset($_GET['token']))
         $_GET['token'] = '';
 
-    if(!isset($_SESSION['token']) && $_GET['token'] == $_SESSION['token'])
+    if(isset($_SESSION['token']) && $_GET['token'] == $_SESSION['token'])
         $has_access = true;
     elseif($_GET['action'] == 'connect')
         $has_access = true;
