@@ -1,7 +1,8 @@
 body{
     margin: 0;
     padding: 40px;
-    background: #eaeaea url("../theme/images/sunset.png") fixed;
+    background: #eaeaea;
+    /*background: #eaeaea url("../theme/images/sunset.png") fixed;*/
     font-family: 'Open Sans', sans-serif, Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
     font-size: 14px;
 }
